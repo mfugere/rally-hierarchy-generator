@@ -4,6 +4,5 @@ This app creates a visual of all user stories and tasks in a given workspace. It
 
 TODO
 ====
-* Fix ID search ("select not defined"?)
 * Pretty up UI
 * New features?
