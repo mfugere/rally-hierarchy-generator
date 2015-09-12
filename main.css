@@ -1,0 +1,20 @@
+header, input, select, button, .toplink { font: 10px arial, sans-serif; }
+.node circle {
+	stroke: grey;
+	stroke-width: 2px;
+}
+.node text { font: 9px arial, sans-serif; }
+.link {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1px;
+}
+header {
+	background-color: lightgrey;
+	border: 1px solid grey;
+	padding: 3px;
+}
+#fetch {
+	width: 50px;
+	height: 20px;
+}
