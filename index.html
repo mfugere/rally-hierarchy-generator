@@ -1,20 +1,32 @@
 <html>
 <head>
 	<title>Rally Hierarchy Generator</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	<script type="text/javascript" src="https://rally1.rallydev.com/apps/2.0/sdk.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
 	<script src="main.js"></script>
 </head>
 <body>
-<header>
+<header class="panel panel-info">
+	<div class="panel-body">
 	<p>Click "Fetch" to retrieve and generate trees representing all artifacts in Rally. Your current project dictates which trees are shown.</p>
-	<p id="menu">
-		<input id="itemid" type="text" placeholder="(Optional) ID number" />
-		<input id="expandall" type="checkbox" /> Expand all by default&nbsp;
-		<button id="fetch" onclick="dig()" disabled>Fetch</button>
-	</p>
-	<nav></nav>
+		<form id="menu" class="form-inline">
+			<div class="form-group">
+				<label for="itemid">(Optional) Artifact ID</label>
+				<input id="itemid" class="form-control input-sm" type="text" placeholder="FormattedID (e.g. 'US27')" />
+			</div>
+			<div class="checkbox">
+				<label>
+					<input id="expandall" type="checkbox" /> Expand all by default
+				</label>
+			</div>
+			<button class="btn btn-primary btn-sm" id="fetch" onclick="dig()" disabled>Fetch</button>
+		</form>
+	</div>
+	<div class="panel-footer">
+		<nav></nav>
+	</div>
 </header>
 <section></section>
 </body>
